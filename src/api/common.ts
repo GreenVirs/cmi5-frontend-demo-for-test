@@ -1,4 +1,5 @@
 import { appFetch, BASE_URL } from './index';
+import { checkConstructor } from '../utils/check-constructor';
 
 export const find = <T>(
   entrypoint: string,
@@ -22,14 +23,15 @@ export const findOne = <T>(
 
 export const create = <T>(
   entrypoint: string,
-  data: Record<string, unknown>,
+  data: Record<string, unknown> | FormData,
   options?: RequestInit
 ): Promise<T> => {
+  const body = checkConstructor(data, FormData) ? data : JSON.stringify(data);
   const opt =
     typeof options === 'undefined'
       ? { method: 'POST', body: JSON.stringify(data) }
-      : { method: 'POST', ...options, body: JSON.stringify(data) };
-
+      : { method: 'POST', ...options, body };
+  // @ts-ignore
   return appFetch<T>(`${BASE_URL}/${entrypoint}`, opt);
 };
 
