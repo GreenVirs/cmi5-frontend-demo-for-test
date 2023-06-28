@@ -1170,6 +1170,11 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@cmi5/requirements@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@cmi5/requirements/-/requirements-1.0.0.tgz#87e36ee7aaadbb2f9d258d685e4d3cc4099b7b02"
+  integrity sha512-zma/xICz33dNVgpDYFeEhVtX9jsPXw8c8GhX4eZdHLMyfqCowyZN16ESYSv/zQp8orOfWHVPdm2bojv4TYUY/w==
+
 "@csstools/normalize.css@*":
   version "12.0.0"
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-12.0.0.tgz#a9583a75c3f150667771f30b60d9f059473e62c4"

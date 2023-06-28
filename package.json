@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@cmi5/requirements": "^1.0.0",
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
     "@fontsource/roboto": "^5.0.1",
@@ -31,7 +32,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "proxy": "http://localhost:5000"
+    "proxy": "http://localhost:5000 http://localhost"
   },
   "eslintConfig": {
     "extends": [
