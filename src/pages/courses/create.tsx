@@ -23,7 +23,14 @@ const CreateCoursePage: FC = () => {
     <form onSubmit={onSubmit}>
       <TextField value={state.title} onChange={setState} name="title" type="text" />
       <TextField value={state.description} onChange={setState} name="description" type="text" />
-      <TextField onChange={setState} name="file" type="file" />
+      <TextField
+        inputProps={{
+          accept: 'application/zip',
+        }}
+        onChange={setState}
+        name="file"
+        type="file"
+      />
       <Button type="submit">Отправить</Button>
     </form>
   );

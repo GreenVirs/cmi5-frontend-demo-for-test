@@ -42,10 +42,15 @@ const CoursePage: FC = () => {
     return <div>Загрузка курса</div>;
   }
 
-  return isEnrollmentCourse ? (
-    <Button>Продолжить курс</Button>
-  ) : (
-    <Button onClick={onEnrollmentCourse}>Начать курс</Button>
+  return (
+    <>
+      {isEnrollmentCourse ? (
+        <Button>Продолжить курс</Button>
+      ) : (
+        <Button onClick={onEnrollmentCourse}>Начать курс</Button>
+      )}
+      {course && <iframe title="Курс" src={course.file_link} />}
+    </>
   );
 };
 export default CoursePage;

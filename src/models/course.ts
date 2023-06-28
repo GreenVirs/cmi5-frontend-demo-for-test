@@ -7,5 +7,6 @@ export interface ICourse {
 }
 
 export interface ICourseWithUsers extends ICourse {
+  file_link: string;
   users: IUser[];
 }

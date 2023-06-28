@@ -9,4 +9,4 @@ export const createCourse = (data: FormData) =>
   axios.post('http://localhost:5000/api/courses', data);
 
 export const enrollmentCourse = (data: { course_id: string; user_id: string }) =>
-  create('/enrollment', data);
+  create('courses/enrollment', data);
